@@ -1,0 +1,14 @@
+iframe {
+    margin:0 5px 5px 0
+}
+
+hr {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #9e9e9e -moz-use-text-color #9e9e9e;
+    border-style: solid none;
+    border-width: 1px 0;
+    margin: 18px 0;
+  }
