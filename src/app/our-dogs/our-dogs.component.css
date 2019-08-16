@@ -8,3 +8,27 @@
     text-align: center;
     padding-top: 35px !important
 }
+
+ul {
+    list-style: none
+}
+
+.f:hover {
+    background-color: #FF69B4 !important;
+    color:white !important;
+
+}
+
+.f:hover a {
+    color:white !important;
+}
+
+.m:hover{
+    background-color: #17a2b8 !important;
+    color:white !important;
+}
+
+.m:hover a {
+    color:white !important;
+
+}

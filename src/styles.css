@@ -1,9 +1,300 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 /* You can add global styles to this file, and also import other style files */
 
+body {
+  font-size: 1.7rem !important;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/random-2d2ff.appspot.com/o/4.4.jpg?alt=media&token=137c4644-7126-4e75-b9fa-b3d579072c42");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center
 
-::ng-deep .mat-tooltip {
-    /* your own custom styles here */ 
-    /* e.g. */
-    min-height: 50px !important;
+  /* linear-gradient(220deg, #fff, brown); */
+}
+
+.popover-title {
+  text-align: center !important;
+  font-size: 1.7rem !important;
+}
+
+.jumbotron p {
+  text-align: center !important;
+}
+
+.jumbotron {
+  margin-bottom: 350px;
+}
+
+.popover {
+  /* display: inline-block !important; */
+  /* top:0 !important; */
+  /* transition: opacity 0.3s ease-in-out; */
+  max-width: 350px !important;
+  width: 120% !important;
+}
+
+.img-responsive {
+  max-width: 250px;
+}
+
+.nav-tabs > li > a {
+  color: black !important;
+  font-weight: 900;
+}
+
+#carret > a:nth-child(1) {
+  color: black !important;
+  font-weight: 900;
+}
+
+.pulsebtn {
+  box-shadow: 0 0 0 0 rgba(#2d2e2e, 0.1);
+  animation: shadow-pulse 2s infinite;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  background-color: #c0c0c0;
+}
+
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .img-responsive {
+    max-width: 140px !important;
+  }
+  .dropdown-menu {
+    left: -210px;
+  }
+}
+
+ul {
+  text-align: center;
+  list-style-type: none !important;
+}
+
+.img-fluid {
+  max-width: 300px !important;
+}
+
+.f {
+  background-color: #ff4d94;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.fem {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.fem:hover {
+  background-color: #ff4d94 !important;
+  color: #ffffff !important;
+}
+
+.male {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.male:hover {
+  background-color: #17a2b8 !important;
+  color: #ffffff !important;
+}
+
+.male:hover a {
+  color: #ffffff !important;
+}
+.fem:hover a {
+  color: #ffffff !important;
+}
+
+.m {
+  background-color: #17a2b8;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+.btn {
+  border-radius: 8px !important;
+}
+button {
+  height: 60px !important;
+  width: 100% !important;
+  white-space: pre-wrap;
+  line-height: 26px !important;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.dog {
+  /* max-height: 200px; */
+  border-radius: 8px;
+}
+
+#myPopover {
+  position: relative;
+}
+
+.popover-title {
+  text-align: center !important;
+}
+
+.champs {
+  font-size: 1.5rem;
+}
+
+p {
+  font-weight: 600;
+  margin: 0px !important;
+  margin-top: 5px !important;
+}
+
+.whitebg {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  padding: 10px !important;
+}
+
+.hr {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: #eeeeee -moz-use-text-color #ffffff !important;
+  border-style: solid none !important;
+  border-width: 3px 0 !important;
+  margin: 18px 0;
+}
+
+.height-100 {
+  height: 100% !important;
+}
+
+.btnlump {
+  border-radius: 5px;
+  border: 1px solid #a9a9a9;
+}
+
+.closebtn {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  button {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .gen4 button {
+    margin: calc(100% - 100px) 0 !important;
+  }
+
+  .gen3 button {
+    margin: calc(100% - 52px) 0 !important;
+  }
+
+  .gen2 button {
+    margin: calc(100% + 40px) 0 !important;
+  }
+  .gen1 button {
+    margin: calc(100% + 220px) 0 !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .gen4 button {
+    margin: calc(100% - 150px) 0 !important;
+  }
+
+  .gen3 button {
+    margin: calc(100% - 92px) 0 !important;
+  }
+
+  .gen2 button {
+    margin: calc(100% + 23px) 0 !important;
+  }
+  .gen1 button {
+    margin: calc(100% + 250px) 0 !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gen4 button {
+    margin: calc(100% - 200px) 0 !important;
+  }
+
+  .gen3 button {
+    margin: calc(100% - 145px) 0 !important;
+  }
+
+  .gen2 button {
+    margin: calc(100% - 40px) 0 !important;
+  }
+  .gen1 button {
+    margin: calc(100% + 160px) 0 !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  button {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .height-100 {
+    height: auto !important;
+    width: auto !important;
+    margin-top: 10px !important;
+    padding: 5px;
+  }
+  button {
+    margin: 10px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .popover {
+    -webkit-box-shadow: 10px 10px 5px 1000px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 1000px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 1000px rgba(0, 0, 0, 0.75);
+  }
+
+  .closebtn {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0;
+  }
+
+  .closebtn:hover {
+    cursor: pointer;
+  }
+
+  .pulsebtn {
+    animation: none !important;
+  }
+  .img-responsive {
+    max-width: 250px;
+  }
+}
+
+.texthref {
+  color: black;
+  text-decoration: none !important;
+  font-weight: 700;
+  border-bottom: 1px dotted #000;
 }

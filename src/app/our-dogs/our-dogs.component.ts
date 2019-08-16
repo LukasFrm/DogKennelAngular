@@ -22,7 +22,7 @@ export class OurDogsComponent implements OnInit {
 
   ngOnInit() {}
 
-  navigateToDog(x) {
-    this.router.navigate(["/our-dogs/" + x + ""]);
-  }
+  // navigateToDog(x) {
+  //   this.router.navigate(["/our-dogs/" + x + ""]);
+  // }
 }

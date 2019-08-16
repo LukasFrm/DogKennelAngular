@@ -1,0 +1,674 @@
+<div>
+        <h1 class="text-center text-capitalize mt-5">Istargram Di Sutri (Etna)</h1>
+        <h3 class="text-center text-capitalize mt-5">Giminės medis</h3>
+      </div>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-12 jumbotron">
+            <div class="col-sm-12 col-md-3 height-100">
+                <div class="btnlump text-center height-100 gen1">
+                  <h2>1 Karta</h2>
+              <button
+                class="f btn pulsebtn"
+                [popover]="istagramPopover"
+                [popoverCloseOnMouseOutside]="false"
+                [popoverOnHover]="true"
+                (mouseenter) = "lookingAt('istagram')"
+              >
+                <h2>Istargram Di Sutri</h2>
+              </button>
+              <div>
+                <popover-content
+                  #istagramPopover
+                  title="{{ dogName }}"
+                  class="mx-auto mt-5"
+                  placement="bottom"
+                  [animation]="true"
+                  
+                > 
+                  <img
+                    *ngIf="dogPic != nullCondition"
+                    src="{{ dogPic }}"
+                    class="dog img-responsive mx-auto"
+                  />
+                  <p *ngIf="dogChamps != nullCondition" class="champs">   <a class="closebtn">❌</a>         
+      
+                    <b> {{ dogChamps }}</b>
+                  </p>
+                  <p *ngIf="dogRegno != nullCondition">
+                    <b>LŠVK/Registracijos nr.:</b> {{ dogRegno }}
+                  </p>
+                  <p *ngIf="dogOtherNo != nullCondition">
+                    <b>Originalus nr.: </b>{{ dogOtherNo }}
+                  </p>
+                  <p *ngIf="dogDob != nullCondition">
+                    <b>Gimimo data:</b> {{ dogDob }}
+                  </p>
+                  <p *ngIf="dogLoc != nullCondition"><b>Vieta:</b> {{ dogLoc }}</p>
+                  <p *ngIf="dogColour != nullCondition">
+                    <b>Spalva:</b> {{ dogColour }}
+                  </p>
+                <p *ngIf="dogNotes != nullCondition"><b>Kita:</b> {{dogNotes}}</p></popover-content>
+              </div>
+            </div>
+          </div>
+      
+            
+      
+            <!-- GENERATION 2 -->
+            <div
+              class="col-sm-12 col-md-3 height-100 
+            "
+            >
+            <div class="btnlump text-center height-100 gen2">
+              <h2>2 karta</h2>        
+              <button
+                class="m btn"
+                [popover]="mysterioPopover"
+                [popoverCloseOnMouseOutside]="false"
+                [popoverOnHover]="true"
+                (mouseenter) = "lookingAt('mysterio')"
+                
+              >
+              <h2>Lantaka Mysterio
+
+
+
+                </h2>
+              </button>
+              <div>
+              <popover-content
+              
+                #mysterioPopover
+                title="{{ dogName }}"
+                class="mx-auto mt-5"
+                placement="bottom"
+                [animation]="true"
+              >
+                <img
+                  *ngIf="dogPic != nullCondition"
+                  src="{{ dogPic }}"
+                  class="dog img-responsive mx-auto"
+                />
+                <p *ngIf="dogChamps != nullCondition" class="champs"><a class="closebtn">❌</a>
+                  <b> {{ dogChamps }}</b>
+                </p>
+                <p *ngIf="dogRegno != nullCondition">
+                  <b>LŠVK/Registracijos nr.:</b> {{ dogRegno }}
+                </p>
+                <p *ngIf="dogOtherNo != nullCondition">
+                  <b>Originalus nr.: </b>{{ dogOtherNo }}
+                </p>
+                <p *ngIf="dogDob != nullCondition">
+                  <b>Gimimo data:</b> {{ dogDob }}
+                </p>
+                <p *ngIf="dogLoc != nullCondition"><b>Vieta:</b> {{ dogLoc }}</p>
+                <p *ngIf="dogColour != nullCondition">
+                  <b>Spalva:</b> {{ dogColour }}
+                </p>
+              <p *ngIf="dogNotes != nullCondition"><b>Kita:</b> {{dogNotes}}</p></popover-content></div>
+              <button
+                class="f btn"
+                [popover]="primaPopover"
+                [popoverCloseOnMouseOutside]="false"
+                [popoverOnHover]="true"
+                (mouseenter) = "lookingAt('prima')"
+              >
+                <h2>Prima Ballerina Di Sutri
+
+
+
+                    </h2>
+              </button>
+              <popover-content
+                #primaPopover
+                title="{{ dogName }}"
+                class="mx-auto mt-5"
+                placement="bottom"
+                [animation]="true"
+                [closeOnClickOutside]="false"
+              >
+                <img
+                  *ngIf="dogPic != nullCondition"
+                  src="{{ dogPic }}"
+                  class="dog img-responsive mx-auto"
+                />
+                <p *ngIf="dogChamps != nullCondition" class="champs"><a class="closebtn">❌</a>
+                   
+      
+                  <b> {{ dogChamps }}</b>
+                </p>
+                <p *ngIf="dogRegno != nullCondition">
+                  <b>LŠVK/Registracijos nr.:</b> {{ dogRegno }}
+                </p>
+                <p *ngIf="dogOtherNo != nullCondition">
+                  <b>Originalus nr.: </b>{{ dogOtherNo }}
+                </p>
+                <p *ngIf="dogDob != nullCondition">
+                  <b>Gimimo data:</b> {{ dogDob }}
+                </p>
+                <p *ngIf="dogLoc != nullCondition"><b>Vieta:</b> {{ dogLoc }}</p>
+                <p *ngIf="dogColour != nullCondition">
+                  <b>Spalva:</b> {{ dogColour }}
+                </p>
+              <p *ngIf="dogNotes != nullCondition"><b>Kita:</b> {{dogNotes}}</p></popover-content>
+            </div>
+          </div>
+      
+            <div
+              class="col-sm-12 col-md-3 height-100 
+            "
+            >
+            <div class="btnlump text-center height-100  gen3">
+      <h2>3 Karta</h2>
+              <button
+                class="m btn"
+                [popover]="petePopover"
+                [popoverCloseOnMouseOutside]="false"
+                [popoverOnHover]="true"
+                (mouseenter) = "lookingAt('pete')"
+              >
+                <h2>Myrmidon Jack Pete
+
+
+
+                    </h2>
+              </button>
+              <popover-content
+              #petePopover
+              title="{{ dogName }}"
+              class="mx-auto mt-5"
+              placement="bottom"
+              [animation]="true"
+              [closeOnClickOutside]="false"
+            >
+              <img
+                *ngIf="dogPic != nullCondition"
+                src="{{ dogPic }}"
+                class="dog img-responsive mx-auto"
+              />
+              <p *ngIf="dogChamps != nullCondition" class="champs"><a class="closebtn">❌</a>
+                <b> {{ dogChamps }}</b>
+              </p>
+              <p *ngIf="dogRegno != nullCondition">
+                <b>LŠVK/Registracijos nr.:</b> {{ dogRegno }}
+              </p>
+              <p *ngIf="dogOtherNo != nullCondition">
+                <b>Originalus nr.: </b>{{ dogOtherNo }}
+              </p>
+              <p *ngIf="dogDob != nullCondition">
+                <b>Gimimo data:</b> {{ dogDob }}
+              </p>
+              <p *ngIf="dogLoc != nullCondition"><b>Vieta:</b> {{ dogLoc }}</p>
+              <p *ngIf="dogColour != nullCondition">
+                <b>Spalva:</b> {{ dogColour }}
+              </p>
+            <p *ngIf="dogNotes != nullCondition"><b>Kita:</b> {{dogNotes}}</p></popover-content>
+              <button
+                class="f btn"
+                [popover]="dekkaPopover"
+                [popoverCloseOnMouseOutside]="false"
+                [popoverOnHover]="true"
+                (mouseenter) = "lookingAt('dekka')"
+              >
+                <h2>Myrmidon Jack Dekka
+
+                    </h2>
+              </button>
+              <popover-content
+              #dekkaPopover
+              title="{{ dogName }}"
+              class="mx-auto mt-5"
+              placement="bottom"
+              [animation]="true"
+              [closeOnClickOutside]="false"
+            >
+              <img
+                *ngIf="dogPic != nullCondition"
+                src="{{ dogPic }}"
+                class="dog img-responsive mx-auto"
+              />
+              <p *ngIf="dogChamps != nullCondition" class="champs"><a class="closebtn">❌</a>
+                <b> {{ dogChamps }}</b>
+              </p>
+              <p *ngIf="dogRegno != nullCondition">
+                <b>LŠVK/Registracijos nr.:</b> {{ dogRegno }}
+              </p>
+              <p *ngIf="dogOtherNo != nullCondition">
+                <b>Originalus nr.: </b>{{ dogOtherNo }}
+              </p>
+              <p *ngIf="dogDob != nullCondition">
+                <b>Gimimo data:</b> {{ dogDob }}
+              </p>
+              <p *ngIf="dogLoc != nullCondition"><b>Vieta:</b> {{ dogLoc }}</p>
+              <p *ngIf="dogColour != nullCondition">
+                <b>Spalva:</b> {{ dogColour }}
+              </p>
+            <p *ngIf="dogNotes != nullCondition"><b>Kita:</b> {{dogNotes}}</p></popover-content>
+              <button
+      
+                class="m btn"
+                [popover]="lyckansPopover"
+                [popoverCloseOnMouseOutside]="false"
+                [popoverOnHover]="true"
+                (mouseenter) = "lookingAt('lyckans')"
+              >
+                <h2>Silverlyckans Wishing And Hoping
+
+                    </h2>
+              </button>
+              <popover-content
+              #lyckansPopover
+              title="{{ dogName }}"
+              class="mx-auto mt-5"
+              placement="bottom"
+              [animation]="true"
+              [closeOnClickOutside]="false"
+            >
+              <img
+                *ngIf="dogPic != nullCondition"
+                src="{{ dogPic }}"
+                class="dog img-responsive mx-auto"
+              />
+              <p *ngIf="dogChamps != nullCondition" class="champs"><a class="closebtn">❌</a>
+                <b> {{ dogChamps }}</b>
+              </p>
+              <p *ngIf="dogRegno != nullCondition">
+                <b>LŠVK/Registracijos nr.:</b> {{ dogRegno }}
+              </p>
+              <p *ngIf="dogOtherNo != nullCondition">
+                <b>Originalus nr.: </b>{{ dogOtherNo }}
+              </p>
+              <p *ngIf="dogDob != nullCondition">
+                <b>Gimimo data:</b> {{ dogDob }}
+              </p>
+              <p *ngIf="dogLoc != nullCondition"><b>Vieta:</b> {{ dogLoc }}</p>
+              <p *ngIf="dogColour != nullCondition">
+                <b>Spalva:</b> {{ dogColour }}
+              </p>
+            <p *ngIf="dogNotes != nullCondition"><b>Kita:</b> {{dogNotes}}</p></popover-content>
+              <button 
+              class="f btn"
+                [popover]="frescaPopover"
+                [popoverCloseOnMouseOutside]="false"
+                [popoverOnHover]="true"
+                (mouseenter) = "lookingAt('fresca')"
+              >
+                <h2>Vernice Fresca Di Sutri
+
+                    </h2>
+              </button>
+              <popover-content
+              #frescaPopover
+              title="{{ dogName }}"
+              class="mx-auto mt-5"
+              placement="bottom"
+              [animation]="true"
+              [closeOnClickOutside]="false"
+            >
+              <img
+                *ngIf="dogPic != nullCondition"
+                src="{{ dogPic }}"
+                class="dog img-responsive mx-auto"
+              />
+              <p *ngIf="dogChamps != nullCondition" class="champs"><a class="closebtn">❌</a>
+                <b> {{ dogChamps }}</b>
+              </p>
+              <p *ngIf="dogRegno != nullCondition">
+                <b>LŠVK/Registracijos nr.:</b> {{ dogRegno }}
+              </p>
+              <p *ngIf="dogOtherNo != nullCondition">
+                <b>Originalus nr.: </b>{{ dogOtherNo }}
+              </p>
+              <p *ngIf="dogDob != nullCondition">
+                <b>Gimimo data:</b> {{ dogDob }}
+              </p>
+              <p *ngIf="dogLoc != nullCondition"><b>Vieta:</b> {{ dogLoc }}</p>
+              <p *ngIf="dogColour != nullCondition">
+                <b>Spalva:</b> {{ dogColour }}
+              </p>
+            <p *ngIf="dogNotes != nullCondition"><b>Kita:</b> {{dogNotes}}</p></popover-content>
+            </div>
+          </div>
+      
+            <div
+              class="col-sm-12 col-md-3 height-100
+            "
+            >
+            <div class="btnlump text-center height-100  gen4">
+              <h2>4 Karta</h2>
+              <button
+                class="m btn"
+                [popover]="kandoPopover"
+                [popoverCloseOnMouseOutside]="false"
+                [popoverOnHover]="true"
+                (mouseenter) = "lookingAt('kando')"
+              >
+              <h2>Pretorium Just Kando
+
+                </h2>
+              </button>
+              <popover-content
+              #kandoPopover
+              title="{{ dogName }}"
+              class="mx-auto mt-5"
+              placement="bottom"
+              [animation]="true"
+              [closeOnClickOutside]="false"
+            >
+              <img
+                *ngIf="dogPic != nullCondition"
+                src="{{ dogPic }}"
+                class="dog img-responsive mx-auto"
+              />
+              <p *ngIf="dogChamps != nullCondition" class="champs"><a class="closebtn">❌</a>
+                <b> {{ dogChamps }}</b>
+              </p>
+              <p *ngIf="dogRegno != nullCondition">
+                <b>LŠVK/Registracijos nr.:</b> {{ dogRegno }}
+              </p>
+              <p *ngIf="dogOtherNo != nullCondition">
+                <b>Originalus nr.: </b>{{ dogOtherNo }}
+              </p>
+              <p *ngIf="dogDob != nullCondition">
+                <b>Gimimo data:</b> {{ dogDob }}
+              </p>
+              <p *ngIf="dogLoc != nullCondition"><b>Vieta:</b> {{ dogLoc }}</p>
+              <p *ngIf="dogColour != nullCondition">
+                <b>Spalva:</b> {{ dogColour }}
+              </p>
+            <p *ngIf="dogNotes != nullCondition"><b>Kita:</b> {{dogNotes}}</p></popover-content>
+              <button
+                class="f btn"
+                [popover]="periPopover"
+                [popoverCloseOnMouseOutside]="false"
+                [popoverOnHover]="true"
+                (mouseenter) = "lookingAt('peri')"
+              >
+                <h2>Myrmidon Jack Peri
+
+                    </h2>
+              </button>
+              <popover-content
+              #periPopover
+              title="{{ dogName }}"
+              class="mx-auto mt-5"
+              placement="bottom"
+              [animation]="true"
+              [closeOnClickOutside]="false"
+            >
+              <img
+                *ngIf="dogPic != nullCondition"
+                src="{{ dogPic }}"
+                class="dog img-responsive mx-auto"
+              />
+              <p *ngIf="dogChamps != nullCondition" class="champs"><a class="closebtn">❌</a>
+                <b> {{ dogChamps }}</b>
+              </p>
+              <p *ngIf="dogRegno != nullCondition">
+                <b>LŠVK/Registracijos nr.:</b> {{ dogRegno }}
+              </p>
+              <p *ngIf="dogOtherNo != nullCondition">
+                <b>Originalus nr.: </b>{{ dogOtherNo }}
+              </p>
+              <p *ngIf="dogDob != nullCondition">
+                <b>Gimimo data:</b> {{ dogDob }}
+              </p>
+              <p *ngIf="dogLoc != nullCondition"><b>Vieta:</b> {{ dogLoc }}</p>
+              <p *ngIf="dogColour != nullCondition">
+                <b>Spalva:</b> {{ dogColour }}
+              </p>
+            <p *ngIf="dogNotes != nullCondition"><b>Kita:</b> {{dogNotes}}</p></popover-content>
+              <button
+                class="m btn"
+                [popover]="danzeyPopover"
+                [popoverCloseOnMouseOutside]="false"
+                [popoverOnHover]="true"
+                (mouseenter) = "lookingAt('danzey')"
+                
+              >
+      <h2>        Myrmidon Jack Danzey
+
+
+        </h2>        </button>
+              <popover-content
+              #danzeyPopover
+              title="{{ dogName }}"
+              class="mx-auto mt-5"
+              placement="bottom"
+              [animation]="true"
+              [closeOnClickOutside]="false"
+            >
+              <img
+                *ngIf="dogPic != nullCondition"
+                src="{{ dogPic }}"
+                class="dog img-responsive mx-auto"
+              />
+              <p *ngIf="dogChamps != nullCondition" class="champs"><a class="closebtn">❌</a>
+                <b> {{ dogChamps }}</b>
+              </p>
+              <p *ngIf="dogRegno != nullCondition">
+                <b>LŠVK/Registracijos nr.:</b> {{ dogRegno }}
+              </p>
+              <p *ngIf="dogOtherNo != nullCondition">
+                <b>Originalus nr.: </b>{{ dogOtherNo }}
+              </p>
+              <p *ngIf="dogDob != nullCondition">
+                <b>Gimimo data:</b> {{ dogDob }}
+              </p>
+              <p *ngIf="dogLoc != nullCondition"><b>Vieta:</b> {{ dogLoc }}</p>
+              <p *ngIf="dogColour != nullCondition">
+                <b>Spalva:</b> {{ dogColour }}
+              </p>
+            <p *ngIf="dogNotes != nullCondition"><b>Kita:</b> {{dogNotes}}</p></popover-content>
+              <button
+      
+                class="f btn"
+                [popover]="myrmidonPopover"
+                [popoverCloseOnMouseOutside]="false"
+                [popoverOnHover]="true"
+                (mouseenter) = "lookingAt('myrmidon')"
+              >
+                <h2>Myrmidon Jack Rebecca
+
+                    </h2>
+              </button>
+              <popover-content
+              #myrmidonPopover
+              title="{{ dogName }}"
+              class="mx-auto mt-5"
+              placement="bottom"
+              [animation]="true"
+              [closeOnClickOutside]="false"
+            >
+              <img
+                *ngIf="dogPic != nullCondition"
+                src="{{ dogPic }}"
+                class="dog img-responsive mx-auto"
+              />
+              <p *ngIf="dogChamps != nullCondition" class="champs"><a class="closebtn">❌</a>
+                <b> {{ dogChamps }}</b>
+              </p>
+              <p *ngIf="dogRegno != nullCondition">
+                <b>LŠVK/Registracijos nr.:</b> {{ dogRegno }}
+              </p>
+              <p *ngIf="dogOtherNo != nullCondition">
+                <b>Originalus nr.: </b>{{ dogOtherNo }}
+              </p>
+              <p *ngIf="dogDob != nullCondition">
+                <b>Gimimo data:</b> {{ dogDob }}
+              </p>
+              <p *ngIf="dogLoc != nullCondition"><b>Vieta:</b> {{ dogLoc }}</p>
+              <p *ngIf="dogColour != nullCondition">
+                <b>Spalva:</b> {{ dogColour }}
+              </p>
+            <p *ngIf="dogNotes != nullCondition"><b>Kita:</b> {{dogNotes}}</p></popover-content>
+              <button
+                class="m btn"
+                [popover]="ultraPopover"
+                [popoverCloseOnMouseOutside]="false"
+                [popoverOnHover]="true"
+                (mouseenter) = "lookingAt('ultra')"
+              >
+                <h2>Ultra Pride Of Mayoland                    </h2>
+              </button>
+              <popover-content
+              #ultraPopover
+              title="{{ dogName }}"
+              class="mx-auto mt-5"
+              placement="bottom"
+              [animation]="true"
+              [closeOnClickOutside]="false"
+            >
+              <img
+                *ngIf="dogPic != nullCondition"
+                src="{{ dogPic }}"
+                class="dog img-responsive mx-auto"
+              />
+              <p *ngIf="dogChamps != nullCondition" class="champs"><a class="closebtn">❌</a>
+                <b> {{ dogChamps }}</b>
+              </p>
+              <p *ngIf="dogRegno != nullCondition">
+                <b>LŠVK/Registracijos nr.:</b> {{ dogRegno }}
+              </p>
+              <p *ngIf="dogOtherNo != nullCondition">
+                <b>Originalus nr.: </b>{{ dogOtherNo }}
+              </p>
+              <p *ngIf="dogDob != nullCondition">
+                <b>Gimimo data:</b> {{ dogDob }}
+              </p>
+              <p *ngIf="dogLoc != nullCondition"><b>Vieta:</b> {{ dogLoc }}</p>
+              <p *ngIf="dogColour != nullCondition">
+                <b>Spalva:</b> {{ dogColour }}
+              </p>
+            <p *ngIf="dogNotes != nullCondition"><b>Kita:</b> {{dogNotes}}</p></popover-content>
+              <button
+                class="f btn"
+                [popover]="magicPopover"
+                [popoverCloseOnMouseOutside]="false"
+                [popoverOnHover]="true"
+                (mouseenter) = "lookingAt('magic')"
+              >
+                <h2>Bushwack's Myrmidon Magic
+                    </h2>
+              </button>
+              <popover-content
+              #magicPopover
+              title="{{ dogName }}"
+              class="mx-auto mt-5"
+              placement="bottom"
+              [animation]="true"
+              [closeOnClickOutside]="false"
+            >
+              <img
+                *ngIf="dogPic != nullCondition"
+                src="{{ dogPic }}"
+                class="dog img-responsive mx-auto"
+              />
+              <p *ngIf="dogChamps != nullCondition" class="champs"><a class="closebtn">❌</a>
+                <b> {{ dogChamps }}</b>
+              </p>
+              <p *ngIf="dogRegno != nullCondition">
+                <b>LŠVK/Registracijos nr.:</b> {{ dogRegno }}
+              </p>
+              <p *ngIf="dogOtherNo != nullCondition">
+                <b>Originalus nr.: </b>{{ dogOtherNo }}
+              </p>
+              <p *ngIf="dogDob != nullCondition">
+                <b>Gimimo data:</b> {{ dogDob }}
+              </p>
+              <p *ngIf="dogLoc != nullCondition"><b>Vieta:</b> {{ dogLoc }}</p>
+              <p *ngIf="dogColour != nullCondition">
+                <b>Spalva:</b> {{ dogColour }}
+              </p>
+            <p *ngIf="dogNotes != nullCondition"><b>Kita:</b> {{dogNotes}}</p></popover-content>
+              <button
+              class="m btn"
+              [popover]="luckysPopover"
+              [popoverCloseOnMouseOutside]="false"
+              [popoverOnHover]="true"
+              (mouseenter) = "lookingAt('luckys')"
+              
+            >
+    <h2>          Litlenapoleon Luckys Boy
+
+
+      </h2>        </button>
+            <popover-content
+            #luckysPopover
+            title="{{ dogName }}"
+            class="mx-auto mt-5"
+            placement="bottom"
+            [animation]="true"
+            [closeOnClickOutside]="false"
+            >
+              <img
+                *ngIf="dogPic != nullCondition"
+                src="{{ dogPic }}"
+                class="dog img-responsive mx-auto"
+              />
+              <p *ngIf="dogChamps != nullCondition" class="champs"><a class="closebtn">❌</a>
+                <b> {{ dogChamps }}</b>
+              </p>
+              <p *ngIf="dogRegno != nullCondition">
+                <b>LŠVK/Registracijos nr.:</b> {{ dogRegno }}
+              </p>
+              <p *ngIf="dogOtherNo != nullCondition">
+                <b>Originalus nr.: </b>{{ dogOtherNo }}
+              </p>
+              <p *ngIf="dogDob != nullCondition">
+                <b>Gimimo data:</b> {{ dogDob }}
+              </p>
+              <p *ngIf="dogLoc != nullCondition"><b>Vieta:</b> {{ dogLoc }}</p>
+              <p *ngIf="dogColour != nullCondition">
+                <b>Spalva:</b> {{ dogColour }}
+              </p>
+            <p *ngIf="dogNotes != nullCondition"><b>Kita:</b> {{dogNotes}}</p></popover-content>
+              <button
+                class="f btn"
+                [popover]="bugammePopover"
+                [popoverCloseOnMouseOutside]="false"
+                [popoverOnHover]="true"
+                (mouseenter) = "lookingAt('bugamme')"
+              >
+                <h2>Braperemi Buggame
+
+                    </h2>
+              </button>
+              <popover-content
+              #bugammePopover
+              title="{{ dogName }}"
+              class="mx-auto mt-5"
+              placement="bottom"
+              [animation]="true"
+              [closeOnClickOutside]="false"
+            >
+              <img
+                *ngIf="dogPic != nullCondition"
+                src="{{ dogPic }}"
+                class="dog img-responsive mx-auto"
+              />
+              <p *ngIf="dogChamps != nullCondition" class="champs"><a class="closebtn">❌</a>
+                <b> {{ dogChamps }}</b>
+              </p>
+              <p *ngIf="dogRegno != nullCondition">
+                <b>LŠVK/Registracijos nr.:</b> {{ dogRegno }}
+              </p>
+              <p *ngIf="dogOtherNo != nullCondition">
+                <b>Originalus nr.: </b>{{ dogOtherNo }}
+              </p>
+              <p *ngIf="dogDob != nullCondition">
+                <b>Gimimo data:</b> {{ dogDob }}
+              </p>
+              <p *ngIf="dogLoc != nullCondition"><b>Vieta:</b> {{ dogLoc }}</p>
+              <p *ngIf="dogColour != nullCondition">
+                <b>Spalva:</b> {{ dogColour }}
+              </p>
+              
+            <p *ngIf="dogNotes != nullCondition"><b>Kita:</b> {{dogNotes}}</p></popover-content>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      

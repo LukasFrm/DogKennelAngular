@@ -1,0 +1,31 @@
+<popover-content
+                  #{{selected}}
+                  title="{{ dogName }}"
+                  class="mx-auto mt-5"
+                  placement="bottom"
+                  [animation]="true"
+                  
+                > 
+                  <img
+                    *ngIf="dogPic != nullCondition"
+                    src="{{ dogPic }}"
+                    class="dog img-responsive mx-auto"
+                  />
+                  <p *ngIf="dogChamps != nullCondition" class="champs">   <a class="closebtn">❌</a>         
+      
+                    <b> {{ dogChamps }}</b>
+                  </p>
+                  <p *ngIf="dogRegno != nullCondition">
+                    <b>LŠVK/Registracijos nr.:</b> {{ dogRegno }}
+                  </p>
+                  <p *ngIf="dogOtherNo != nullCondition">
+                    <b>Originalus nr.: </b>{{ dogOtherNo }}
+                  </p>
+                  <p *ngIf="dogDob != nullCondition">
+                    <b>Gimimo data:</b> {{ dogDob }}
+                  </p>
+                  <p *ngIf="dogLoc != nullCondition"><b>Vieta:</b> {{ dogLoc }}</p>
+                  <p *ngIf="dogColour != nullCondition">
+                    <b>Spalva:</b> {{ dogColour }}
+                  </p>
+                <p *ngIf="dogNotes != nullCondition"><b>Kita:</b> {{dogNotes}}</p></popover-content>
